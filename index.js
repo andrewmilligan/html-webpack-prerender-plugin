@@ -73,6 +73,7 @@ class HtmlWebpackPrerenderPlugin {
     window.requestAnimationFrame = requestAnimationFrame;
     window.cancelAnimationFrame = cancelAnimationFrame;
     window.fetch = fetch;
+    window.__HTML_WEBPACK_PRERENDER_PLUGIN__ = true;
 
     try {
       app = _eval(source, {
